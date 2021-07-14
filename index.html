@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>LootMania</title>
+		<link id="stylesheet" rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="img/Logo.png">
+	</head>
+
+	<body>
+		
+		<div class="header">
+			<h1>LootMania</h1>
+			<div class="c_1">
+				<div class="c_solde" onclick="openRelaodMenu()">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+	  				<path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+	  				<path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+	  				<path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+	  				<path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+					</svg>
+					<p class="solde" id="solde"></p>
+				</div>
+				<p class="recharger" onclick="openRelaodMenu()">Recharger</p>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="pack fortnite">
+				<div class="c_1">
+					<div class="c_background">
+						<img src="img/mainBanner1.png" onclick="openFortniteDetails()">
+					</div>
+					<div class="title" onclick="openFortniteDetails()">
+						<h2>Fortnite</h2>
+					</div>
+					<div class="c_bundle">
+						<img src="img/bundleimage1.png" onclick="openFortniteDetails()">
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="pack rocket">
+				<div class="c_1">
+					<div class="c_background">
+						<img src="img/mainBanner2.png" onclick="openRocketDetails()">
+					</div>
+					<div class="title" onclick="openRocketDetails()">
+						<h2>Rocket League</h2>
+					</div>
+					<div class="c_bundle">
+						<img src="img/bundleimage2.png" onclick="openRocketDetails()">
+					</div>
+				</div>
+			</div>
+
+			<div class="pack holiday">
+				<div class="c_1">
+					<div class="c_background">
+						<img src="img/mainBanner3.png" onclick="openHolidayDetails()">
+					</div>
+					<div class="title" onclick="openHolidayDetails()">
+						<h2>Holiday Camp</h2>
+					</div>
+					<div class="c_bundle">
+						<img src="img/bundleimage3.png" onclick="openHolidayDetails()">
+					</div>
+				</div>
+			</div>
+
+			<div class="pack twitch">
+				<div class="c_1">
+					<div class="c_background">
+						<img src="img/mainBanner4.png" onclick="openTwitchDetails()">
+					</div>
+					<div class="title" onclick="openTwitchDetails()">
+						<h2>Twitch</h2>
+					</div>
+					<div class="c_bundle">
+						<img src="img/bundleimage4.png" onclick="openTwitchDetails()">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="details detail_fortnite">
+			<div class="c_all">
+				<svg onclick="closeFortniteDetails()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+				</svg>
+				<div class="c_background">
+					<img src="img/mainBanner1.png">
+				</div>
+				<div class="c_bundle">
+					<img src="img/bundleimage1.png">
+				</div>
+				<div class="c_titre">
+					<h2>Fortnite</h2>
+				</div>
+				<div class="c_quantite">
+					<div class="form" onclick="pack1()"><p>x1</p></div>
+					<div class="form" onclick="pack5()"><p>x5</p></div>
+					<div class="form" onclick="pack10()"><p>x10</p></div>
+					<div class="form" onclick="pack25()"><p>x25</p></div>
+				</div>
+				<p class="p_quantite p_quantite1">1 Pack</p>
+				<div class="c_prix">
+					<div class="form prix prix1"><p></p></div>
+					<button class="b1" onclick="fortnitePay()">J'achète</button>
+				</div>
+				<div class="c_manquant c_manquant1">
+					<p>Solde Manquant</p>
+				</div>
+				<div class="c_rewards c_rewards1">
+					<li>13 500 V-Bucks (8€)</li>
+					<li>5 000 V-Bucks (20€)</li>
+					<li>2 800 V-Bucks (32€)</li>
+					<li>1 000 V-Bcuks (80€)</li>
+					<li>Pack Reflets Obscurs (16€)</li>
+					<li>Pack Légendes Glaciaires (25€)</li>
+					<li>Pack Maîtres Du Magma (15€)</li>
+					<li>Skin Légendaire (⁓20€)</li>
+					<li>Skin Epique (⁓15€)</li>
+					<li>Skin Rare (⁓12€)</li>
+					<li>Skin Atypique (⁓8€)</li>
+				</div>
+			</div>
+		</div>
+
+		<div class="details detail_rocket">
+			<div class="c_all">
+				<svg onclick="closeRocketDetails()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+				</svg>
+				<div class="c_background">
+					<img src="img/mainBanner2.png">
+				</div>
+				<div class="c_bundle">
+					<img src="img/bundleimage2.png">
+				</div>
+				<div class="c_titre">
+					<h2>Rocket League</h2>
+				</div>
+				<div class="c_quantite">
+					<div class="form" onclick="pack1()"><p>x1</p></div>
+					<div class="form" onclick="pack5()"><p>x5</p></div>
+					<div class="form" onclick="pack10()"><p>x10</p></div>
+					<div class="form" onclick="pack25()"><p>x25</p></div>
+				</div>
+				<p class="p_quantite p_quantite2">1 Pack</p>
+				<div class="c_prix">
+					<div class="form prix prix2"><p></p></div>
+					<button class="b1" onclick="rocketPay()">J'achète</button>
+				</div>
+				<div class="c_manquant c_manquant2">
+					<p>Solde Manquant</p>
+				</div>
+				<div class="c_rewards c_rewards2">
+					<li>Dominus Blanc Titane (375€)</li>
+					<li>Octane Blanc Titane (120€)</li>
+					<li>Fennec Blanc Titane (75€)</li>
+					<li>6 500 Crédits (41€)</li>
+					<li>3 000 Crédits (21€)</li>
+					<li>1 100 Crédits (9€)</li>
+					<li>500 Crédits (5€)</li>
+					<li>Skin Marché noir (?€)</li>
+					<li>Skin Exotique (?€)</li>
+					<li>Skin Importé (?€)</li>
+					<li>Skin Très Rare (?€)</li>
+				</div>
+			</div>
+		</div>
+
+		<div class="details detail_holiday">
+			<div class="c_all">
+				<svg onclick="closeHolidayDetails()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+				</svg>
+				<div class="c_background">
+					<img src="img/mainBanner3.png">
+				</div>
+				<div class="c_bundle">
+					<img src="img/bundleimage3.png">
+				</div>
+				<div class="c_titre">
+					<h2>Holiday Camp</h2>
+				</div>
+				<div class="c_quantite">
+					<div class="form" onclick="pack1()"><p>x1</p></div>
+					<div class="form" onclick="pack5()"><p>x5</p></div>
+					<div class="form" onclick="pack10()"><p>x10</p></div>
+					<div class="form" onclick="pack25()"><p>x25</p></div>
+				</div>
+				<p class="p_quantite p_quantite3">1 Pack</p>
+				<div class="c_prix">
+					<div class="form prix prix3"><p></p></div>
+					<button class="b1" onclick="holidayPay()">J'achète</button>
+				</div>
+				<div class="c_manquant c_manquant3">
+					<p>Solde Manquant</p>
+				</div>
+				<div class="c_rewards c_rewards3">
+					<li>PC Gamer (1 900€)</li>
+					<li>Samsung Galaxy S20+ (1 050€)</li>
+					<li>PS5 Standard (500€)</li>
+					<li>XBOX Series X (500€)</li>
+					<li>Ultradesk (310€)</li>
+					<li>Nintendo Switch (300€)</li>
+					<li>Samsung Odyssey 144Hz 24" (240€)</li>
+					<li>Apple AirPods (125€)</li>
+					<li>HyperX Cloud II (90€)</li>
+					<li>KlIM Domination (70€)</li>
+					<li>KLIM Aim (30€)</li>
+				</div>
+			</div>
+		</div>
+
+		<div class="details detail_twitch">
+			<div class="c_all">
+				<svg onclick="closeTwitchDetails()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  				<path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+				</svg>
+				<div class="c_background">
+					<img src="img/mainBanner4.png">
+				</div>
+				<div class="c_bundle">
+					<img src="img/bundleimage4.png">
+				</div>
+				<div class="c_titre">
+					<h2>Twitch</h2>
+				</div>
+				<div class="c_quantite">
+					<div class="form" onclick="pack1()"><p>x1</p></div>
+					<div class="form" onclick="pack5()"><p>x5</p></div>
+					<div class="form" onclick="pack10()"><p>x10</p></div>
+					<div class="form" onclick="pack25()"><p>x25</p></div>
+				</div>
+				<p class="p_quantite p_quantite4">1 Pack</p>
+				<div class="c_prix">
+					<div class="form prix prix4"><p></p></div>
+					<button class="b1" onclick="twitchPay()">J'achète</button>
+				</div>
+				<div class="c_manquant c_manquant4">
+					<p>Solde Manquant</p>
+				</div>
+				<div class="c_rewards c_rewards4">
+					<li>Shure SM7B (400€)</li>
+					<li>Elgato Stream Deck (150€)</li>
+					<li>Logitech C920 HD Pro (70€)</li>
+					<li>Carte Cadeau Twitch (50€)</li>
+					<li>Carte Cadeau Twitch (25€)</li>
+					<li>Carte Cadeau Twitch (10€)</li>
+					<li>Carte Cadeau Twitch (5€)</li>
+					<li>25 000 bits (335€)</li>
+					<li>10 000 bits (140€)</li>
+					<li>5 000 bits (70€)</li>
+					<li>1 500 bits (22€)</li>
+				</div>
+			</div>
+		</div>
+
+		<div class="rewarding">
+			<div class="c_1">
+				<img src="" class="bundle" id="bundle" onclick="bundle_openning()">
+				<img src="" class="lootcards lootcard1">
+				<img src="" class="lootcards lootcard2">
+				<img src="" class="lootcards lootcard3">
+				<button class="b2 recup" onclick="closeRewardMenu()">Récupérer</button>
+			</div>
+		</div>
+
+		<div class="reload_menu">
+			<div class="c_all">
+				<div class="c_carte">
+					<img src="img/card.png">
+				</div>	
+				<div class="c_formulaire">
+					<div class="c_1">
+						<button onclick="closeRelaodMenu()">Annuler</button>
+					</div>
+					<div class="c_2">
+						<div class="c_p_montant">
+							<p class="p_montant">0€</p>
+						</div>
+						<div class="c_montants">
+							<div class="form" onclick="get5()"><p>5€</p></div>
+							<div class="form" onclick="get10()"><p>10€</p></div>
+							<div class="form" onclick="get20()"><p>20€</p></div>
+							<div class="form" onclick="get50()"><p>50€</p></div>
+						</div>
+						<p>Code Bancaire</p>
+						<div class="form">
+							<p>1234 4567 7890 1234</p>
+						</div>
+						<p>Code de sécurité</p>
+						<div class="form">
+							<p>****</p>
+						</div>
+						<p>Date d'expiration</p>
+						<div class="form">
+							<p>02/22</p>
+						</div>
+					</div>
+					<div class="c_3">
+						<button class="b1" onclick="reloading()">Confirmer l'achat</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="app.js"></script>
+
+	</body>
+
+</html>

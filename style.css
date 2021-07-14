@@ -1,0 +1,601 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	overflow-x: hidden;
+	user-select: none;
+}
+
+.header{
+	height:  4vw;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 1.5vw #737373;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	z-index: 2;
+	position: fixed;
+	top: 0;
+}
+
+	.header > h1{
+		margin-left: 2vw;
+		font-size: 2vw;
+		color: #00e094;
+		font-family: calibri;
+		text-align: center;
+		user-select: none;
+		position: relative;
+	}
+
+	.header > .c_1{
+		height:  4vw;
+		width: 17vw;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+		.header > .c_1 > .c_solde{
+			height:  2.15vw;
+			margin-right: 2vw;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			border-bottom: 0.15vw solid #00e094;
+			transition: 0.5s;
+			position: relative;
+		}
+
+			.header > .c_1 > .c_solde > .bi-cash-coin{
+				height:  1.5vw;
+				width: 1.5vw;
+				margin: 0 1vw 0 0.5vw;
+				color: #00e094;
+				position: relative;
+			}
+
+			.header > .c_1 > .c_solde > p{
+				font-size: 1.5vw;
+				color: #000;
+				margin: 0 1.5vw 0 0.2vw;
+				font-family: calibri;
+				text-align: center;
+				user-select: none;
+				position: relative;
+			}
+
+		.header > .c_1 > p{
+			margin-right: 2vw;
+			font-size: 1.5vw;
+			color: #00e094;
+			font-family: calibri;
+			text-align: center;
+			user-select: none;
+			position: relative;
+		}
+
+.main{
+	width: 100%;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	overflow: hidden;
+	z-index: 1;
+	position: absolute;
+	top: 4vw;
+}
+
+	.main > .pack{
+		height: 36vw;
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+		.main > .pack > .c_1{
+			height:  24.5vw;
+			width: 40vw;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			overflow-x: hidden;
+			position: relative;
+		}
+
+			.main > .pack > .c_1 > .c_background{
+				height:  22.5vw;
+				width: 40vw;
+				border-radius: 1vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				position: absolute;
+			}
+
+			.main > .pack > .c_1 > .c_background > img{
+				height:  22.5vw;
+				width: 40vw;
+				border-radius: 1vw;
+				transition: 0.5s;
+				position: relative;
+			}
+
+			.main > .pack > .c_1:hover > .c_background > img{
+				height:  26.6777778vw;
+				width: 47.4271605vw;
+			}
+
+			.main > .pack > .c_1:hover > .c_bundle{
+				height:  24.5vw;
+			}
+
+			.main > .pack > .c_1 > .title{
+				height:  5vw;
+				width: 40vw;
+				background-color: #fff;
+				border-top: 0.5vw solid #00e094;
+				opacity: 0.8;
+				border-radius: 0 0 1vw 1vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+				position: absolute;
+				bottom: 1vw;
+			}
+
+				.main > .pack > .c_1 > .title > h2{
+					font-size: 3vw;
+					color: #00e094;
+					margin-left: 2vw;
+					font-family: calibri;
+					text-align: center;
+					user-select: none;
+					position: relative;
+				}
+
+			.main > .pack > .c_1 > .c_bundle{
+				height:  20.5vw;
+				transition: height 0.5s;
+				position: relative;
+				left: 10vw;
+			}
+
+				.main > .pack > .c_1 > .c_bundle > img{
+					max-height: 100%;
+					width: auto;
+				}
+
+	.details{
+		height: 100%;
+		width: 100%;
+		background: rgba(52, 58, 65, 0.600000);
+		backdrop-filter: blur(5px);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		z-index: 3;
+		transition: top 0.5s;
+		position: fixed;
+		top: 200%;
+	}
+
+		.details > .c_all{
+			height: 100%;
+			width: 35vw;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			overflow: overlay;
+			position: absolute;
+		}
+
+			.details > .c_all > svg{
+				height: 3vw;
+				width: 3vw;
+				margin: 0.7vw 0 0 40vw;
+				color: #fff;
+				background-color: #000;
+				border-radius: 4vw;
+				position: fixed;
+			}
+
+			.details > .c_all > .c_background{
+				height: 19.7vw;
+				border-bottom: 0.5vw solid #00e094;
+			}
+
+			.details > .c_all > .c_bundle{
+				height: 12vw;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-end;
+				position: relative;
+			}
+
+				.details > .c_all > .c_bundle > img{
+					height: 25vw;
+					width:  auto;
+				}
+
+			.details > .c_all > .c_titre{
+				height: 8vw;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+			}
+				.details > .c_all > .c_titre > h2{
+					font-size: 3vw;
+					color: #00e094;
+					font-family: calibri;
+					text-align: center;
+					user-select: none;
+					position: relative;
+				}
+
+			.details > .c_all > .c_quantite{		
+				height: 4vw;
+				width:  17vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+		
+			}
+
+				.details > .c_all > .c_quantite > div:hover{
+					border: 0.1vw solid #3498db;
+				}
+
+			.details > .c_all > p{
+				font-size: 2.5vw;
+				color: #000;
+				font-family: calibri;
+				text-align: center;
+				position: relative;
+			}
+
+			.details > .c_all > .c_prix{
+				height: 8vw;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+				position: relative;
+			}
+
+				.details > .c_all > .c_prix > .prix{
+					margin-left: 3vw;
+					padding: 0.5vw 3vw;
+					font-size: 2vw;
+				}
+
+				.details > .c_all > .c_prix > button{
+					margin-right: 3vw;
+				}
+
+			.details > .c_all > .c_manquant{
+				height: 6vw;
+				width: 100%;
+				display: none;
+				flex-direction: row;
+				align-items: flex-end;
+				justify-content: center;
+				position: relative;
+			}
+
+				.details > .c_all > .c_manquant > P{
+					font-size: 1.2vw;
+					color: red;
+					font-family: calibri;
+					text-align: center;
+					position: relative;
+				}
+
+			.details > .c_all > .c_rewards{
+				height: auto;
+				width: 100%;
+				padding: 5vw 0;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				position: relative;
+			}
+
+				.details > .c_all > .c_rewards > li{
+					margin-left: 3vw;
+					font-size: 1.2vw;
+					color: #000;
+					font-family: calibri;
+					position: relative;
+				}
+
+.rewarding{
+	height:  100%;
+	width: 100%;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	position: fixed;
+	top: -200%;
+}
+
+	.rewarding > .c_1{
+		height:  30vw;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+		.rewarding > .c_1 > .bundle{
+			height: 100%;
+			width: auto;
+			opacity: 100%;
+			transform: rotate3d(0, 0, 0, 180deg);
+			display: block;
+			transition: opacity 0.25s, transform 0.3s;
+		}
+
+		.rewarding > .c_1 > .lootcards{
+			height: 70%;
+			width: auto;
+			margin-bottom: 2vw;
+			opacity: 0%;
+			display: none;
+			transition: opacity 0.15s;
+		}
+
+		.rewarding > .c_1 > .lootcard1{
+			transform: rotate(0deg);
+			transition: transform 2s, left 2s;
+			position: relative;
+			top: 2vw;
+			left: 15.1vw;
+		}
+
+		.rewarding > .c_1 > .lootcard2{
+			transform: rotate(0deg);
+			transition: transform 1s;
+			position: relative;
+			top: 1vw;
+		}
+
+		.rewarding > .c_1 > .lootcard3{
+			transform: rotate(0deg);
+			transition: transform 2s, right 1s;
+			position: relative;
+			top:  2vw;
+			right: 15.1vw;
+		}
+
+		.b2{
+			padding: 0.5vw;
+			font-size: 2vw;
+			color: #fff;
+			font-family: calibri;
+			text-align: center;
+			background-color: #00e094;
+			border: none;
+			border-radius: 0.2vw;
+			outline: none;
+			transition: background 0.5s;
+		}
+
+		.b2:hover{
+			background-color: #00AD5F;
+		}
+
+		.rewarding > .c_1 > .recup{
+			opacity: 0%;
+			display: none;
+			transition: opacity 2s,background 0.5s;
+			position: absolute;
+			top:  27vw;
+		}
+
+.reload_menu{
+	height: 100%;
+	width: 100%;
+	background: rgba(52, 58, 65, 0.600000);
+	backdrop-filter: blur(5px);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+	position: fixed;
+	top: -200%;
+}
+
+	.reload_menu > .c_all{
+		height: 45vw;
+		width: 35vw;
+		background-color: #fff;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+		.reload_menu > .c_all > .c_carte{
+			height: 17.5vw;
+			width: 28vw;
+			border-radius: 1vw;
+			box-shadow: 3vw 2vw 1.5vw rgba(0,0,0,0.5);
+			transform: rotate3d(0.1, 0.1, 0.001, 45deg);
+			transition: bottom 2s;
+			position: relative;
+			bottom: 2vw;
+			right: 8vw;
+		}
+
+		.reload_menu > .c_all > .c_formulaire{
+			height: 45vw;
+			width: 25vw;
+			margin-left: 10vw;
+			background-color: rgba(0,0,0,0.1);
+			backdrop-filter: blur(3px);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+		}
+
+			.reload_menu > .c_all > .c_formulaire > .c_1{
+				height: 8vw;
+				width: 25vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+			}
+
+				.reload_menu > .c_all > .c_formulaire > .c_1 > button{
+					margin-left: 1vw;
+					padding: 0.5vw;
+					font-size: 1.5vw;
+					color: rgba(0,0,0,0.5);
+					font-family: calibri;
+					text-align: center;
+					background-color: #fff;
+					border: 0.1vw solid rgba(0,0,0,0.5);
+					border-radius: 0.2vw;
+					outline: none;
+					transition: background 0.5s;
+				}
+
+				.reload_menu > .c_all > .c_formulaire > .c_1 > button:hover{
+					background-color: rgba(0,0,0,0.05);
+				}
+
+			.reload_menu > .c_all > .c_formulaire > .c_2{
+				height: 29vw;
+				width: 25vw;
+				padding-left: 5vw;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+			}
+
+				.reload_menu > .c_all > .c_formulaire > .c_2 > p{
+					font-size: 1.2vw;
+					color: #000;
+					font-family: calibri;
+					text-align: center;
+					position: relative;
+				}
+
+				.reload_menu > .c_all > .c_formulaire > .c_2 > .c_p_montant{
+					height: 3vw;
+					width:  17vw;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+				}
+
+					.reload_menu > .c_all > .c_formulaire > .c_2 > div > .p_montant{
+						font-size: 2.5vw;
+						color: #000;
+						font-family: calibri;
+						text-align: center;
+						position: relative;
+					}
+
+				.reload_menu > .c_all > .c_formulaire > .c_2 > .c_montants{
+					height: 4vw;
+					width:  17vw;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+				}
+
+					.reload_menu > .c_all > .c_formulaire > .c_2 > .c_montants > div:hover{
+						border: 0.1vw solid #3498db;
+					}
+
+				.form{
+					height: 2vw;
+					padding: 0 0.2vw;
+					background-color: #fff;
+					border: 0.1vw solid rgba(0,0,0,0.5);
+					border-radius: 0.2vw;
+					outline: none;
+					font-size: 1.5vw;
+					color: #000;
+					font-family: calibri;
+					position: relative;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: flex-start;
+				}
+
+					.form > p{
+						font-size: 1.5vw;
+						color: #000;
+						font-family: calibri;
+						position: relative;
+					}
+
+			.reload_menu > .c_all > .c_formulaire > .c_3{
+				height: 8vw;
+				width: 25vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+			}
+
+				.b1{
+					padding: 0.5vw;
+					font-size: 2vw;
+					color: #fff;
+					font-family: calibri;
+					text-align: center;
+					background-color: #3498db;
+					border: none;
+					border-radius: 0.2vw;
+					outline: none;
+					transition: background 0.5s;
+				}
+
+				.b1:hover{
+					background-color: #2980b9;
+				}
+
+img{
+	width: 100%;
+}

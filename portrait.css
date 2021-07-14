@@ -1,0 +1,603 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	overflow-x: hidden;
+	user-select: none;
+}
+
+.header{
+	height: 10vw;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 2.5vw #737373;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	z-index: 2;
+	position: fixed;
+	top: 0;
+}
+
+	.header > h1{
+		margin-left: 4vw;
+		font-size: 5vw;
+		color: #00e094;
+		font-family: calibri;
+		text-align: center;
+		user-select: none;
+		position: relative;
+	}
+
+	.header > .c_1{
+		height:  10vw;
+		width: 30vw;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+		.header > .c_1 > .c_solde{
+			height:  5vw;
+			margin-right: 4vw;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			border-bottom: 0.5vw solid #00e094;
+			transition: 0.5s;
+			position: relative;
+		}
+
+			.header > .c_1 > .c_solde > .bi-cash-coin{
+				height:  3.5vw;
+				width: 3.5vw;
+				margin: 0 2vw 0 1vw;
+				color: #00e094;
+				position: relative;
+			}
+
+			.header > .c_1 > .c_solde > p{
+				font-size: 3.5vw;
+				color: #000;
+				margin: 0 3vw 0 1.5vw;
+				font-family: calibri;
+				text-align: center;
+				user-select: none;
+				position: relative;
+			}
+
+		.header > .c_1 > p{
+			margin-right: 4vw;
+			font-size: 3.5vw;
+			color: #00e094;
+			font-family: calibri;
+			text-align: center;
+			user-select: none;
+			position: relative;
+		}
+
+.main{
+	width: 100%;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	overflow: hidden;
+	z-index: 1;
+	position: absolute;
+	top: 10vw;
+}
+
+	.main > .pack{
+		height: 70vw;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+		.main > .pack > .c_1{
+			height:  59.85vw;
+			width: 90vw;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			overflow-x: hidden;
+			position: relative;
+		}
+
+			.main > .pack > .c_1 > .c_background{
+				height:  50.625vw;
+				width: 90vw;
+				border-radius: 3vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				position: absolute;
+			}
+
+			.main > .pack > .c_1 > .c_background > img{
+				height:  50.625vw;
+				width: 90vw;
+				border-radius: 3vw;
+				transition: 0.5s;
+				position: relative;
+			}
+
+			.main > .pack > .c_1:hover > .c_background > img{
+				height:  59.85vw;
+				width: 106.4vw;
+			}
+
+			.main > .pack > .c_1:hover > .c_bundle{
+				height:  55.125vw;
+			}
+
+			.main > .pack > .c_1 > .title{
+				height:  12vw;
+				width: 90vw;
+				background-color: #fff;
+				border-top: 0.8vw solid #00e094;
+				opacity: 0.8;
+				border-radius: 0 0 1.7vw 1.7vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+				position: absolute;
+				bottom: 4.5vw;
+			}
+
+				.main > .pack > .c_1 > .title > h2{
+					font-size: 5vw;
+					color: #00e094;
+					margin-left: 3.5vw;
+					font-family: calibri;
+					text-align: center;
+					user-select: none;
+					position: relative;
+				}
+
+			.main > .pack > .c_1 > .c_bundle{
+				height:  46.125vw;
+				transition: height 0.5s;
+				position: relative;
+				left: 20vw;
+			}
+
+				.main > .pack > .c_1 > .c_bundle > img{
+					max-height: 100%;
+					width: auto;
+				}
+
+	.details{
+		height: 100%;
+		width: 100%;
+		background: rgba(52, 58, 65, 0.600000);
+		backdrop-filter: blur(5px);
+		overflow-y: overlay;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		z-index: 3;
+		transition: top 0.5s;
+		position: fixed;
+		top: 200%;
+	}
+
+		.details > .c_all{
+			height: 100%;
+			width: 75vw;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			overflow: overlay;
+			position: absolute;
+		}
+
+			.details > .c_all > svg{
+				height: 10vw;
+				width: 10vw;
+				margin: 1vw 0 0 88vw;
+				color: #fff;
+				background-color: #000;
+				border-radius: 10vw;
+				position: fixed;
+			}
+
+			.details > .c_all > .c_background{
+				height: 42.1875vw;
+				border-bottom: 1vw solid #00e094;
+			}
+
+			.details > .c_all > .c_bundle{
+				height: 25vw;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-end;
+				position: relative;
+			}
+
+				.details > .c_all > .c_bundle > img{
+					height: 50vw;
+					width:  auto;
+				}
+
+			.details > .c_all > .c_titre{
+				height: 16vw;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+			}
+				.details > .c_all > .c_titre > h2{
+					font-size: 8vw;
+					color: #00e094;
+					font-family: calibri;
+					text-align: center;
+					user-select: none;
+					position: relative;
+				}
+
+			.details > .c_all > .c_quantite{		
+				height: 6vw;
+				width:  50vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+		
+			}
+
+				.details > .c_all > .c_quantite > div:hover{
+					border: 0.1vw solid #3498db;
+				}
+
+			.details > .c_all > p{
+				font-size: 4.5vw;
+				color: #000;
+				font-family: calibri;
+				text-align: center;
+				position: relative;
+			}
+
+			.details > .c_all > .c_prix{
+				height: 10vw;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+				position: relative;
+			}
+
+				.details > .c_all > .c_prix > .prix{
+					margin-left: 6vw;
+					padding: 2vw 6vw;
+					font-size: 3.5vw;
+				}
+
+				.details > .c_all > .c_prix > button{
+					margin-right: 6vw;
+				}
+
+			.details > .c_all > .c_manquant{
+				height: 10vw;
+				width: 100%;
+				display: none;
+				flex-direction: row;
+				align-items: flex-end;
+				justify-content: center;
+				position: relative;
+			}
+
+				.details > .c_all > .c_manquant > P{
+					font-size: 3vw;
+					color: red;
+					font-family: calibri;
+					text-align: center;
+					position: relative;
+				}
+
+			.details > .c_all > .c_rewards{
+				height: auto;	
+				width: 100%;
+				padding: 10vw 0;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				position: relative;
+			}
+
+				.details > .c_all > .c_rewards > li{
+					margin-left: 10vw;
+					width: 90%;
+					font-size: 1.5vw;
+					color: #000;
+					font-family: calibri;
+					position: relative;
+				}
+
+.rewarding{
+	height:  100%;
+	width: 100%;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	position: fixed;
+	top: -200%;
+}
+
+	.rewarding > .c_1{
+		height:  90vw;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+		.rewarding > .c_1 > .bundle{
+			height: 100%;
+			width: auto;
+			opacity: 100%;
+			transform: rotate3d(0, 0, 0, 180deg);
+			display: block;
+			transition: opacity 0.25s, transform 0.3s;
+		}
+
+		.rewarding > .c_1 > .lootcards{
+			height: 50%;
+			width: auto;
+			margin-bottom: 2vw;
+			opacity: 0%;
+			display: none;
+			transition: opacity 0.15s;
+		}
+
+		.rewarding > .c_1 > .lootcard1{
+			transform: rotate(0deg);
+			transition: transform 2s, left 2s;
+			position: relative;
+			top: 3vw;
+			left: 32.5vw;
+		}
+
+		.rewarding > .c_1 > .lootcard2{
+			transform: rotate(0deg);
+			transition: transform 1s;
+			position: relative;
+			top: 1vw;
+		}
+
+		.rewarding > .c_1 > .lootcard3{
+			transform: rotate(0deg);
+			transition: transform 2s, right 1s;
+			position: relative;
+			top:  3vw;
+			right: 32.5vw;
+		}
+
+		.b2{
+			padding: 2vw;
+			font-size: 3.5vw;
+			color: #fff;
+			font-family: calibri;
+			text-align: center;
+			background-color: #00e094;
+			border: none;
+			border-radius: 0.5vw;
+			outline: none;
+			transition: background 0.5s;
+		}
+
+		.b2:hover{
+			background-color: #00AD5F;
+		}
+
+		.rewarding > .c_1 > .recup{
+			opacity: 0%;
+			display: none;
+			transition: opacity 2s,background 0.5s;
+			position: absolute;
+			top:  70vw;
+		}
+
+.reload_menu{
+	height: 100%;
+	width: 100%;
+	background: rgba(52, 58, 65, 0.600000);
+	backdrop-filter: blur(5px);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+	position: fixed;
+	top: -200%;
+}
+
+	.reload_menu > .c_all{
+		height: 105vw;
+		width: 70vw;
+		background-color: #fff;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+		.reload_menu > .c_all > .c_carte{
+			height: 40vw;
+			width: 64vw;
+			border-radius: 3vw;
+			box-shadow: 6vw 4vw 3vw rgba(0,0,0,0.5);
+			transform: rotate3d(0.1, 0.1, 0.001, 45deg);
+			transition: bottom 2s;
+			position: relative;
+			bottom: 2vw;
+			right: 13vw;
+		}
+
+		.reload_menu > .c_all > .c_formulaire{
+			height: 105vw;
+			width: 55vw;
+			margin-left: 15vw;
+			background-color: rgba(0,0,0,0.1);
+			backdrop-filter: blur(3px);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+		}
+
+			.reload_menu > .c_all > .c_formulaire > .c_1{
+				height: 20vw;
+				width: 55vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+			}
+
+				.reload_menu > .c_all > .c_formulaire > .c_1 > button{
+					margin-left: 5vw;
+					padding: 2vw;
+					font-size: 3.5vw;
+					color: rgba(0,0,0,0.5);
+					font-family: calibri;
+					text-align: center;
+					background-color: #fff;
+					border: 0.1vw solid rgba(0,0,0,0.5);
+					border-radius: 1vw;
+					outline: none;
+					transition: background 0.5s;
+				}
+
+				.reload_menu > .c_all > .c_formulaire > .c_1 > button:hover{
+					background-color: rgba(0,0,0,0.05);
+				}
+
+			.reload_menu > .c_all > .c_formulaire > .c_2{
+				height: 65vw;
+				width: 45vw;
+				padding-left: 2vw;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+			}
+
+				.reload_menu > .c_all > .c_formulaire > .c_2 > p{
+					font-size: 3.5vw;
+					color: #000;
+					font-family: calibri;
+					text-align: center;
+					position: relative;
+				}
+
+				.reload_menu > .c_all > .c_formulaire > .c_2 > .c_p_montant{
+					height: 10vw;
+					width:  45vw;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+				}
+
+					.reload_menu > .c_all > .c_formulaire > .c_2 > div > .p_montant{
+						font-size: 5vw;
+						color: #000;
+						font-family: calibri;
+						text-align: center;
+						position: relative;
+					}
+
+				.reload_menu > .c_all > .c_formulaire > .c_2 > .c_montants{
+					height: 6vw;
+					width:  45vw;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+				}
+
+					.reload_menu > .c_all > .c_formulaire > .c_2 > .c_montants > div:hover{
+						border: 0.1vw solid #3498db;
+					}
+
+				.form{
+					height: 3vw;
+					padding: 1vw 2vw;
+					background-color: #fff;
+					border: 0.1vw solid rgba(0,0,0,0.5);
+					border-radius: 0.5vw;
+					outline: none;
+					font-size: 3.5vw;
+					color: #000;
+					font-family: calibri;
+					position: relative;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: flex-start;
+				}
+
+					.form > p{
+						font-size: 3.5vw;
+						color: #000;
+						font-family: calibri;
+						position: relative;
+					}
+
+			.reload_menu > .c_all > .c_formulaire > .c_3{
+				height: 20vw;
+				width: 55vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+			}
+
+				.b1{
+					padding: 2vw;
+					font-size: 3.5vw;
+					color: #fff;
+					font-family: calibri;
+					text-align: center;
+					background-color: #3498db;
+					border: none;
+					border-radius: 0.5vw;
+					outline: none;
+					transition: background 0.5s;
+				}
+
+				.b1:hover{
+					background-color: #2980b9;
+				}
+
+img{
+	width: 100%;
+}
