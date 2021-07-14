@@ -281,25 +281,25 @@ function pack25() {
 
 
 function fortnitePay() {
-	bundle = "bundleimage1";
+	bundle = "bundleImage1";
 	groupe = "fortnite";
 	setTimeout(pay, 0)
 }
 
 function rocketPay() {
-	bundle = "bundleimage2";
+	bundle = "bundleImage2";
 	groupe = "rocket";
 	setTimeout(pay, 0)
 }
 
 function holidayPay() {
-	bundle = "bundleimage3";
+	bundle = "bundleImage3";
 	groupe = "holiday";
 	setTimeout(pay, 0)
 }
 
 function twitchPay() {
-	bundle = "bundleimage4";
+	bundle = "bundleImage4";
 	groupe = "twitch";
 	setTimeout(pay, 0)
 }
