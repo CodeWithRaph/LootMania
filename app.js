@@ -15,7 +15,7 @@ if (largeur <= hauteur) {
 	paddingRewardAfter = "0 0 10vw 0";
 	cardBottom = "2vw";
 	cardBottomAfter = "4vw";
-	/*alert("Si vous souhaitez changer l'orientation de la page, actualisez la page après avoir changé l'orientation de votre appareil")*/
+	alert("Si vous souhaitez changer l'orientation de la page, actualisez la page après avoir changé l'orientation de votre appareil")
 } else {
 	document.getElementById("stylesheet").setAttribute("href", "style.css");
 	leftRightLootcard = "15.1vw";
