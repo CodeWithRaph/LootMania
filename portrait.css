@@ -7,7 +7,7 @@ body{
 }
 
 .header{
-	height: 10vw;
+	height: 14vw;
 	width: 100%;
 	background-color: #fff;
 	box-shadow: 0 0 2.5vw #737373;
@@ -22,8 +22,8 @@ body{
 }
 
 	.header > h1{
-		margin-left: 4vw;
-		font-size: 5vw;
+		margin-left: 5vw;
+		font-size: 7vw;
 		color: #00e094;
 		font-family: calibri;
 		text-align: center;
@@ -41,8 +41,8 @@ body{
 	}
 
 		.header > .c_1 > .c_solde{
-			height:  5vw;
-			margin-right: 4vw;
+			height:  6vw;
+			margin-right: 5vw;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -52,17 +52,17 @@ body{
 		}
 
 			.header > .c_1 > .c_solde > .bi-cash-coin{
-				height:  3.5vw;
-				width: 3.5vw;
-				margin: 0 2vw 0 1vw;
+				height:  4vw;
+				width: 4vw;
+				margin: 0 3vw 0 2vw;
 				color: #00e094;
 				position: relative;
 			}
 
 			.header > .c_1 > .c_solde > p{
-				font-size: 3.5vw;
+				font-size: 4vw;
 				color: #000;
-				margin: 0 3vw 0 1.5vw;
+				margin: 0 4vw 0 2.5vw;
 				font-family: calibri;
 				text-align: center;
 				user-select: none;
@@ -70,8 +70,8 @@ body{
 			}
 
 		.header > .c_1 > p{
-			margin-right: 4vw;
-			font-size: 3.5vw;
+			margin-right: 5vw;
+			font-size: 4.5vw;
 			color: #00e094;
 			font-family: calibri;
 			text-align: center;
@@ -90,11 +90,11 @@ body{
 	overflow: hidden;
 	z-index: 1;
 	position: absolute;
-	top: 10vw;
+	top: 19vw;
 }
 
 	.main > .pack{
-		height: 70vw;
+		height: 65vw;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -146,7 +146,7 @@ body{
 				height:  12vw;
 				width: 90vw;
 				background-color: #fff;
-				border-top: 0.8vw solid #00e094;
+				border-top: 1.6vw solid #00e094;
 				opacity: 0.8;
 				border-radius: 0 0 1.7vw 1.7vw;
 				display: flex;
@@ -158,7 +158,7 @@ body{
 			}
 
 				.main > .pack > .c_1 > .title > h2{
-					font-size: 5vw;
+					font-size: 6vw;
 					color: #00e094;
 					margin-left: 3.5vw;
 					font-family: calibri;
@@ -219,11 +219,11 @@ body{
 
 			.details > .c_all > .c_background{
 				height: 42.1875vw;
-				border-bottom: 1vw solid #00e094;
+				border-bottom: 2vw solid #00e094;
 			}
 
 			.details > .c_all > .c_bundle{
-				height: 25vw;
+				height: 30vw;
 				width: 100%;
 				display: flex;
 				flex-direction: column;
@@ -233,7 +233,7 @@ body{
 			}
 
 				.details > .c_all > .c_bundle > img{
-					height: 50vw;
+					height: 60vw;
 					width:  auto;
 				}
 
@@ -247,7 +247,7 @@ body{
 				position: relative;
 			}
 				.details > .c_all > .c_titre > h2{
-					font-size: 8vw;
+					font-size: 10vw;
 					color: #00e094;
 					font-family: calibri;
 					text-align: center;
@@ -270,7 +270,7 @@ body{
 				}
 
 			.details > .c_all > p{
-				font-size: 4.5vw;
+				font-size: 7vw;
 				color: #000;
 				font-family: calibri;
 				text-align: center;
@@ -288,13 +288,13 @@ body{
 			}
 
 				.details > .c_all > .c_prix > .prix{
-					margin-left: 6vw;
-					padding: 2vw 6vw;
-					font-size: 3.5vw;
+					margin-left: 5vw;
+					padding: 3vw 7vw;
+					font-size: 5vw;
 				}
 
 				.details > .c_all > .c_prix > button{
-					margin-right: 6vw;
+					margin-right: 5vw;
 				}
 
 			.details > .c_all > .c_manquant{
@@ -308,7 +308,7 @@ body{
 			}
 
 				.details > .c_all > .c_manquant > P{
-					font-size: 3vw;
+					font-size: 4vw;
 					color: red;
 					font-family: calibri;
 					text-align: center;
@@ -329,7 +329,7 @@ body{
 				.details > .c_all > .c_rewards > li{
 					margin-left: 10vw;
 					width: 90%;
-					font-size: 1.5vw;
+					font-size: 2vw;
 					color: #000;
 					font-family: calibri;
 					position: relative;
@@ -380,7 +380,7 @@ body{
 			transform: rotate(0deg);
 			transition: transform 2s, left 2s;
 			position: relative;
-			top: 3vw;
+			bottom: 4vw;
 			left: 32.5vw;
 		}
 
@@ -388,26 +388,26 @@ body{
 			transform: rotate(0deg);
 			transition: transform 1s;
 			position: relative;
-			top: 1vw;
+			bottom: 6vw;
 		}
 
 		.rewarding > .c_1 > .lootcard3{
 			transform: rotate(0deg);
 			transition: transform 2s, right 1s;
 			position: relative;
-			top:  3vw;
+			bottom:  4vw;
 			right: 32.5vw;
 		}
 
 		.b2{
-			padding: 2vw;
-			font-size: 3.5vw;
+			padding: 3vw;
+			font-size: 4.5vw;
 			color: #fff;
 			font-family: calibri;
 			text-align: center;
 			background-color: #00e094;
 			border: none;
-			border-radius: 0.5vw;
+			border-radius: 0.75vw;
 			outline: none;
 			transition: background 0.5s;
 		}
@@ -484,14 +484,14 @@ body{
 
 				.reload_menu > .c_all > .c_formulaire > .c_1 > button{
 					margin-left: 5vw;
-					padding: 2vw;
-					font-size: 3.5vw;
+					padding: 3vw;
+					font-size: 4vw;
 					color: rgba(0,0,0,0.5);
 					font-family: calibri;
 					text-align: center;
 					background-color: #fff;
 					border: 0.1vw solid rgba(0,0,0,0.5);
-					border-radius: 1vw;
+					border-radius: 0.75vw;
 					outline: none;
 					transition: background 0.5s;
 				}
@@ -511,7 +511,8 @@ body{
 			}
 
 				.reload_menu > .c_all > .c_formulaire > .c_2 > p{
-					font-size: 3.5vw;
+					line-height: 0.5vw;
+					font-size: 4vw;
 					color: #000;
 					font-family: calibri;
 					text-align: center;
@@ -528,7 +529,7 @@ body{
 				}
 
 					.reload_menu > .c_all > .c_formulaire > .c_2 > div > .p_montant{
-						font-size: 5vw;
+						font-size: 7vw;
 						color: #000;
 						font-family: calibri;
 						text-align: center;
@@ -549,13 +550,13 @@ body{
 					}
 
 				.form{
-					height: 3vw;
+					height: 4vw;
 					padding: 1vw 2vw;
 					background-color: #fff;
 					border: 0.1vw solid rgba(0,0,0,0.5);
-					border-radius: 0.5vw;
+					border-radius: 0.75vw;
 					outline: none;
-					font-size: 3.5vw;
+					font-size: 4vw;
 					color: #000;
 					font-family: calibri;
 					position: relative;
@@ -566,7 +567,7 @@ body{
 				}
 
 					.form > p{
-						font-size: 3.5vw;
+						font-size: 4vw;
 						color: #000;
 						font-family: calibri;
 						position: relative;
@@ -582,14 +583,14 @@ body{
 			}
 
 				.b1{
-					padding: 2vw;
-					font-size: 3.5vw;
+					padding: 3vw;
+					font-size: 4vw;
 					color: #fff;
 					font-family: calibri;
 					text-align: center;
 					background-color: #3498db;
 					border: none;
-					border-radius: 0.5vw;
+					border-radius: 0.75vw;
 					outline: none;
 					transition: background 0.5s;
 				}
