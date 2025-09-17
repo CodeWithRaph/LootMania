@@ -109,7 +109,7 @@ body{
 			flex-direction: row;
 			align-items: center;
 			justify-content: center;
-			overflow-x: hidden;
+			overflow: hidden;
 			position: relative;
 		}
 
@@ -121,7 +121,7 @@ body{
 				flex-direction: row;
 				align-items: center;
 				justify-content: center;
-				overflow: hidden !important;
+				overflow: hidden;
 				position: absolute;
 			}
 
@@ -600,3 +600,4 @@ img{
 	width: 100%;
 
 }
+
